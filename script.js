@@ -54,3 +54,27 @@ document.addEventListener("keydown", function (event) {
 });
 
 updateDisplay();
+
+document.addEventListener("DOMContentLoaded", function () {
+  const themes = ["theme-1", "theme-2", "theme-3"];
+  const themeButtons = document.querySelectorAll(".theme-btn button");
+  const numbers = document.querySelectorAll(".theme-part p");
+
+  function changeTheme(index) {
+    document.body.classList.remove(...themes);
+
+    document.body.classList.add(themes[index]);
+  }
+
+  themeButtons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+      changeTheme(index);
+    });
+  });
+
+  numbers.forEach((number, index) => {
+    number.addEventListener("click", () => {
+      changeTheme(index);
+    });
+  });
+});

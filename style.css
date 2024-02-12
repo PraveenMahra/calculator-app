@@ -23,7 +23,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 header {
@@ -31,14 +31,59 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 45rem;
+  color: hsl(60, 10%, 19%);
 
   h1 {
     font-size: 4rem;
   }
 
   .theme {
-    font-size: 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: hsl(60, 10%, 19%);
+
+    h2 {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+    }
   }
+}
+
+.theme-selection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.theme-part {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.2rem;
+}
+
+.theme-btn {
+  background-color: hsl(0, 5%, 81%);
+  border-radius: 5rem;
+  display: flex;
+  gap: 1rem;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.theme-btn button {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.theme-1-btn {
+  background-color: hsl(25, 98%, 40%) !important;
 }
 
 .display {
@@ -53,11 +98,16 @@ header {
   font-size: 3.2rem;
   padding: 0 2rem;
   overflow: auto;
+  letter-spacing: 1.5px;
+  font-size: 5rem;
+  font-weight: inherit;
+  color: hsl(60, 10%, 19%);
 }
 
 .all-keys {
   background-color: hsl(0, 5%, 81%);
   padding: 3rem;
+  border-radius: 5px;
 }
 
 .keys {
@@ -78,7 +128,12 @@ header {
   box-shadow: 0px 5px hsl(35, 11%, 61%);
   padding: 1.5rem;
   height: 5.5rem;
+  transition: all 0.3s;
+}
+
+.btn:hover {
   cursor: pointer;
+  background-color: hsl(0, 14%, 96%);
 }
 
 .del-btn {
@@ -86,6 +141,10 @@ header {
   box-shadow: 0px 5px hsl(185, 58%, 25%);
   color: hsl(0, 0%, 100%);
   text-transform: uppercase;
+}
+
+.del-btn:hover {
+  background-color: hsl(185, 50%, 53%);
 }
 
 .reset-equal-key {
@@ -102,9 +161,158 @@ header {
   width: 18rem;
 }
 
+.reset-btn:hover {
+  background-color: hsl(185, 50%, 53%);
+}
+
 .equal-btn {
   background-color: hsl(25, 98%, 40%);
   box-shadow: 0px 5px hsl(25, 99%, 27%);
   color: hsl(0, 0%, 100%);
   width: 18rem;
+}
+
+.equal-btn:hover {
+  background-color: hsl(25, 85%, 53%);
+}
+
+/* Theme - 2*/
+
+.theme-2 {
+  background-color: hsl(222, 26%, 31%);
+
+  header {
+    color: hsl(0, 0%, 100%);
+  }
+
+  .theme {
+    color: hsl(0, 0%, 100%);
+  }
+
+  .theme-btn {
+    background-color: hsl(223, 31%, 20%);
+  }
+
+  .theme-1-btn {
+    background-color: inherit !important;
+  }
+
+  .theme-2-btn {
+    background-color: hsl(6, 63%, 50%);
+  }
+
+  .display {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(224, 36%, 15%);
+  }
+
+  .all-keys {
+    background-color: hsl(223, 31%, 20%);
+  }
+
+  .btn:hover {
+    background-color: hsl(0, 14%, 96%);
+  }
+
+  .del-btn {
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0px 5px hsl(224, 28%, 35%);
+  }
+
+  .del-btn:hover {
+    background-color: hsl(225, 51%, 71%);
+  }
+
+  .reset-btn {
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0px 5px hsl(224, 28%, 35%);
+  }
+
+  .reset-btn:hover {
+    background-color: hsl(225, 51%, 71%);
+  }
+
+  .equal-btn {
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: 0px 5px hsl(6, 70%, 34%);
+  }
+
+  .equal-btn:hover {
+    background-color: hsl(6, 68%, 57%);
+  }
+}
+
+/* Theme - 3 */
+
+.theme-3 {
+  background-color: hsl(268, 75%, 9%);
+
+  header {
+    color: hsl(52, 100%, 62%);
+  }
+
+  .theme {
+    color: hsl(52, 100%, 62%);
+  }
+
+  .theme-btn {
+    background-color: hsl(268, 71%, 12%);
+  }
+
+  .theme-1-btn {
+    background-color: inherit !important;
+  }
+
+  .theme-3-btn {
+    background-color: hsl(176, 100%, 44%);
+  }
+
+  .display {
+    color: hsl(52, 100%, 62%);
+    background-color: hsl(268, 71%, 12%);
+  }
+
+  .all-keys {
+    background-color: hsl(268, 71%, 12%);
+  }
+
+  .btn {
+    background-color: hsl(268, 47%, 21%);
+    box-shadow: 0px 5px hsl(290, 70%, 36%);
+    color: hsl(52, 100%, 62%);
+  }
+
+  .btn:hover {
+    background-color: hsl(268, 48%, 37%);
+  }
+
+  .del-btn {
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 0px 5px hsl(285, 91%, 52%);
+    color: hsl(0, 0%, 100%);
+  }
+
+  .del-btn:hover {
+    background-color: hsl(281, 57%, 49%);
+  }
+
+  .reset-btn {
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 0px 5px hsl(285, 91%, 52%);
+    color: hsl(0, 0%, 100%);
+  }
+
+  .reset-btn:hover {
+    background-color: hsl(281, 57%, 49%);
+  }
+
+  .equal-btn {
+    background-color: hsl(176, 100%, 44%);
+    box-shadow: 0px 5px hsl(177, 92%, 70%);
+    color: hsl(198, 20%, 13%);
+  }
+
+  .equal-btn:hover {
+    background-color: hsla(176, 94%, 41%, 0.948);
+  }
 }
