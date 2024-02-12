@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Calculator app</title>
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>calc</h1>
+        <div class="theme">Theme</div>
+      </header>
+
+      <div class="display">0</div>
+
+      <div class="all-keys">
+        <div class="keys">
+          <button class="btn" data-key="7" onclick="appendToDisplay('7')">
+            7
+          </button>
+          <button class="btn" data-key="8" onclick="appendToDisplay('8')">
+            8
+          </button>
+          <button class="btn" data-key="9" onclick="appendToDisplay('9')">
+            9
+          </button>
+          <button class="btn del-btn" onclick="clearDisplay()">del</button>
+          <button class="btn" data-key="4" onclick="appendToDisplay('4')">
+            4
+          </button>
+          <button class="btn" data-key="5" onclick="appendToDisplay('5')">
+            5
+          </button>
+          <button class="btn" data-key="6" onclick="appendToDisplay('6')">
+            6
+          </button>
+          <button class="btn" data-key="+" onclick="appendToDisplay('+')">
+            +
+          </button>
+          <button class="btn" data-key="1" onclick="appendToDisplay('1')">
+            1
+          </button>
+          <button class="btn" data-key="2" onclick="appendToDisplay('2')">
+            2
+          </button>
+          <button class="btn" data-key="3" onclick="appendToDisplay('3')">
+            3
+          </button>
+          <button class="btn" data-key="-" onclick="appendToDisplay('-')">
+            -
+          </button>
+          <button class="btn" data-key="." onclick="appendToDisplay('.')">
+            .
+          </button>
+          <button class="btn" data-key="0" onclick="appendToDisplay('0')">
+            0
+          </button>
+          <button class="btn" data-key="/" onclick="appendToDisplay('/')">
+            /
+          </button>
+          <button class="btn" data-key="*" onclick="appendToDisplay('*')">
+            *
+          </button>
+        </div>
+        <div class="reset-equal-key">
+          <button class="btn reset-btn" onclick="clearDisplay()">reset</button>
+          <button class="btn equal-btn" data-key="=" onclick="calculate()">
+            =
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
