@@ -95,7 +95,6 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-size: 3.2rem;
   padding: 0 2rem;
   overflow: auto;
   letter-spacing: 1.5px;
@@ -315,4 +314,29 @@ header {
   .equal-btn:hover {
     background-color: hsla(176, 94%, 41%, 0.948);
   }
+}
+
+@media (max-width: 450px){
+  header{
+    width: 100%;
+    }
+  .display{
+    width: 100%;
+    }
+
+  .all-keys{
+    padding: 30px 10px;
+    }
+
+  .reset-btn{
+    width: auto;
+    }
+
+  .theme-btn button{
+    padding: 10px;
+    height: 10px;
+    }
+
+  
+  
 }
